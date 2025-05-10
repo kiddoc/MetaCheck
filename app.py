@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request, render_template
 import os
-
+from flask_cors import CORS
 
 app = Flask(__name__) # Flask construcror
-
+CORS(app)
 
 @app.route('/')
 def form():
