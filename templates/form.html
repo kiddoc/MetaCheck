@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metabolic Syndrome Check-up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Submit Biomarkers</h2>
+        <form action="/submit" method="post">
+            <label for="waist">Waist circumference(cm):</label>
+            <input type="number" name="waist" id="waist" required><br><br>
+
+            <label for="tg">Triglycerides(mg/dL):</label>
+            <input type="number" name="tg" id="tg" required><br><br>
+
+            <label for="hdl">HDL(mg/dL):</label>
+            <input type="number" name="hdl" id="hdl" required><br><br>
+
+            <label for="bp">Systolic Blood Pressure(mmHg):</label>
+            <input type="number" name="bp" id="bp" required><br><br>
+
+            <label for="fpg">Fasting Plasma Glucose(mg/dL):</label>
+            <input type="number" name="fpg" id="fpg" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="https://idf.org/media/uploads/2023/05/attachments-30.pdf" target="_blank">
+            International Diabetes Federation link
+        </a>
+    </div>
+
+</body>
+</html>
