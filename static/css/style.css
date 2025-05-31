@@ -66,11 +66,10 @@ body {
     text-decoration: underline;
   }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px; /* optional spacing */
-}
 
-  
+  .widget-holder {
+  display: flex;            /* makes centering trivial */
+  justify-content: center;  /* horizontal centering */
+  width: 100%;              /* take full line so “center” is truly centred */
+  margin-top: 1rem;         /* optional spacing below the section above */
+}
